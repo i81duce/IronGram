@@ -1,13 +1,25 @@
 <html>
 <body>
+
 <form action="/login" method="post" id="login" hidden>
     <input type="text" placeholder="Username" name="userName"/>
     <input type="password" placeholder="Password" name="password"/>
     <button type="submit">Login</button>
 </form>
 
+<form action="/logout" method="post" id="logout" hidden>
+    <button type="submit">Logout</button>
+</form>
+
 <form action="/upload" method="post" enctype="multipart/form-data" id="upload" hidden>
     <input type="file" name="photo"/>
+    <br/>
+    <br/>
+    Delete photo after <input type="number" name="timeInput" size="2"/> sec.
+    <br/>
+    <br/>
+    <input type="text" name="recipient"/><br/>
+
     <button type="submit">Upload</button>
 </form>
 

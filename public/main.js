@@ -12,6 +12,7 @@ function getUser(userData) {
     }
     else {
         $("#upload").show();
+        $("#logout").show();
         $.get("/photos", getPhotos);
     }
 }
